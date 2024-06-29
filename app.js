@@ -40,7 +40,7 @@ function generarNumSecreto() {
 	let rangoJuego = parseInt(prompt(`Ingresa el rango de juego... Ejm 100`));
 	return Math.floor(Math.random() * rangoJuego) + 1;
 }
-u8o000  
+
 // DECREMENTA LOS INTENTOS CADA VEZ QUE EL USUARIO FALLA
 function intentosUsuario() {
 	if (intentos != 1) {
@@ -54,6 +54,7 @@ function intentosUsuario() {
 function pista() {
 	return inputElement.value > numSecreto ? `el numero secreto es "MENOR"` : `el numero secreto es "MAYOR"`;
 }
+
 // VERIFICA SI EL JUGADOR ACERTO O NO LA JUGADA
 function verificarIntento() {
 	let numImput = parseInt(inputElement.value);
@@ -80,7 +81,7 @@ function verificarIntento() {
 
 		}
 
-		console.log(numImput);
+		// console.log(numImput);
 	}
 }
 // REINICIA EL JUEGO
@@ -94,7 +95,7 @@ function nuevoJuego() {
 	toggleButton("#verificar", false);
 	toggleButton("#reiniciar", true);
 	numSecreto = generarNumSecreto();
-	console.log(numSecreto);
+	// console.log(numSecreto);
 }
 
 asignarTexto("h1", "Juego del numero secreto");
