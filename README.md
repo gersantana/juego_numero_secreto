@@ -1,4 +1,4 @@
-# Juego del numero secreto
+# **Juego del numero secreto**
 
 ## *Instrucciones:*
 
